@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <title>Traveling!</title>
+    <style>
+        element {
+            all: unset;
+        }
+
+        #List-card::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
-<body style="background-color: #E2F6FC; align-items: center; justify-content: center; display: flex; flex-direction: column;">
+
+<body
+    style="background-color: #E2F6FC; align-items: center; justify-content: center; display: flex; flex-direction: column;">
     <div id="page" style="max-width: 1440px;">
         <nav id="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0px 80px;">
             <div id="logo">
-                <p style="font-family: 'Roboto'; color: #42A7C3; font-size: 36px; font-weight: bold;  cursor: pointer;">Traveling!</p>
+                <p style="font-family: 'Roboto'; color: #42A7C3; font-size: 36px; font-weight: bold;  cursor: pointer;">
+                    Traveling!</p>
             </div>
-            <div id="menu-list" style="display: flex; font-family: 'Lato'; font-size: 16px; font-weight: 400; gap: 80px;">
+            <div id="menu-list"
+                style="display: flex; font-family: 'Lato'; font-size: 16px; font-weight: 400; gap: 80px;">
                 <p style=" cursor: pointer;">Product</p>
                 <p style=" cursor: pointer;">Contact Us</p>
                 <p style=" cursor: pointer;">About Us</p>
             </div>
             <div id="sign-up">
-                <button style="padding: 12px 32px; border-radius: 8px; border: none; background-color: #FA8443; color: #F0F8FF; font-family: 'Lato'; font-size: 16px; font-weight: bold; cursor: pointer;" type="submit">Sign Up</button>
+                <button
+                    style="padding: 12px 32px; border-radius: 8px; border: none; background-color: #FA8443; color: #F0F8FF; font-family: 'Lato'; font-size: 16px; font-weight: bold; cursor: pointer;"
+                    type="submit">Sign Up</button>
             </div>
         </nav>
-        
-        <section id="hero-section" style="padding: 10px 80px; display: flex; justify-content: space-between; align-items: center;">
+
+        <section id="hero-section"
+            style="padding: 10px 80px; display: flex; justify-content: space-between; align-items: center;">
             <div id="details">
                 <p id="first-text" style="font-family: 'Poppins'; font-size: 56px; font-weight: bold; color: #333333;">
                     Start your journey <br> by one click, explore <br> beautiful world!
                 </p>
-                <p id="second-text" style="font-family: 'Poppins'; font-size: 16px; font-weight: regular; color: #333333;">
-                    Plan and book your perfect trip with expert advice, travel tips, <br> destination information and inspiration from us!
+                <p id="second-text"
+                    style="font-family: 'Poppins'; font-size: 16px; font-weight: regular; color: #333333;">
+                    Plan and book your perfect trip with expert advice, travel tips, <br> destination information and
+                    inspiration from us!
                 </p>
                 <span id="download-app" style="display: flex; gap: 24px;">
                     <img style="width: 136px; height: 40px; cursor: pointer;" src="/googlePlay.png" alt="">
@@ -43,27 +64,147 @@
             </div>
         </section>
 
-     <section id="popular-destination"style="padding: 105px 105px; width: 1,440px; height: 685px; " >
-        <div id="" style=" height:1,227px; width: 455px; gap: 10px;">
+        <section id="popular-destination" style="padding: 10px 80px;">
+            <div id="">
                 <p style="font-family: lato; font-size: 30px; font-weight: bold;">Popular Destinations</p>
-                <p style="font-family: lato; font-size: 16px; font-weight: regular; ">vacations to make your experience enjoyable in Indonesia! </p>
-            <samp id="" style="display: flex;">
-                <img style="width: 264px; height: 180px;" src="/floresroad.png" alt="">
-                <img style="width: 264px; height: 180px;" src="/forresterglamping.png" alt="">
-                <img style="width: 264px; height: 180px;" src="/bail.png" alt="">
-                <img style="width: 264px; height: 180px;" src="/desawisata.png" alt="">
-            </samp>
-            <div>
-                 <p> Flores Road Trip 3D2N</p>
-                 <p> 3 Day</p>
-                 <p> Rp 6.705.000/orang</p>
-                 
+                <p style="font-family: lato; font-size: 16px; font-weight: regular; color: #333333; ">vacations to
+                    make your experience
+                    enjoyable in Indonesia! </p>
             </div>
-        </div>
-    </section>
+            <div id="List-card"
+                style="display: flex; gap: 35px; width: 100%; overflow-x: auto; white-space: nowrap; padding-bottom: 10px; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
+
+                <span id="card1"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 264px; height: 180px; padding-top: 6px;" src="/floresroad.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍Manggarai
+                            Barat</p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Flores Road
+                            Trip 3D2N</p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">3 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 6,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card2"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 264px; height: 180px; padding-top: 6px;" src="/forresterglamping.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍Bogor
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Forrester Glamping Co Bogor </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">1 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 1205,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card3"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 264px; height: 180px; padding-top: 6px;" src="/bail.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍jakarta
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Paket Tiket Pesawat <br> Jakarta Bali
+                            </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">3 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 605,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card4"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 264px; height: 180px; padding-top: 6px;" src="/desawisata.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍Kota Semarang
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Desa Wisata Kandri
+                            </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">14 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 106,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card5"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 250px; height: 160px; padding-top: 6px;" src="/DJI_0207-min.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍Goa
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Goa
+                            </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">6 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 17,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card6"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 250px; height: 160px; padding-top: 6px;" src="/Mesmerizing-Places-To-Visit-In-Sikkim.png" alt="">
+                    <div style="padding-left: 16px;">
+                        <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍Sikkim
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">Sikkim
+                            </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">4 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 9,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+                <span id="card7"
+                    style="background-color: rgba(240, 240, 240, 0.45); border: 1px solid #fff; border-radius: 16px; display: inline-block;">
+                    <img style="width: 250px; height: 160px; padding-top: 6px;" src="/kerala.png" alt="">
+                    <div style="padding-left: 16px;">
+                       <p style="font-size: 10px; font-family: 'Lato'; font-weight: 400; color: #8F8F8F;">📍kerala
+                            </p>
+                        <p style="font-size: 16px; font-family: 'Lato'; font-weight: 700; color: #333333;">kerala
+                            </p>
+                        <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #636363;">3 Days</p>
+                        <span style="display: flex;">
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 700; color: #42A7C3;">₹ 6,000/
+                            </p>
+                            <p style="font-size: 14px; font-family: 'Lato'; font-weight: 400; color: #42A7C3;">person
+                            </p>
+                        </span>
+                    </div>
+                </span>
+
+            </div>
+        </section>
 
     </div>
 </body>
+
 </html>
 
 <!-- For any commit first -> add the File and then write the comment "initial commit" -->
